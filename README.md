@@ -6,11 +6,18 @@
 ![Alt Text](https://github.com/gron1gh1/docker-rtsp-video-streaming/blob/master/preview.gif)
 
 ## Usage
-Please modify **.env**  file.
+**Step 1**  
+```sh
+> git clone https://github.com/gron1gh1/docker-rtsp-video-streaming.git
+> cd docker-rtsp-video-streaming
+```
+
+**Step 2** Please modify **.env**  file.
 ```
 HOST_PORT={Port to be actually serviced}
 VIDEO_FILE ={Video File to be actually streamed}
 ```
+
 **RTSP Streaming Server Run**
 ```sh
 > docker-compose up -d
