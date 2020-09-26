@@ -1,0 +1,20 @@
+version : '3'
+
+services:
+        rtsp-simple-server:
+                image: aler9/rtsp-simple-server
+                volumes:
+                        - ${PWD}/rtsp-simple-server.yml:/rtsp-simple-server.yml
+                ports:
+                        - "${HOST_PORT}:8554"
+        ffmpeg-media-server:
+                build:
+                        context: .
+                        dockerfile: Dockerfile
+                volumes:
+                        - ${PWD}/${VIDEO_FILE}:/video.mp4
+                links:
+                        - rtsp-simple-server:server
+                command: sh ffmpeg-server-run.sh ${HOST_PORT}
+
+
