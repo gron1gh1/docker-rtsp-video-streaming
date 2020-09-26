@@ -12,7 +12,7 @@ services:
                         context: .
                         dockerfile: Dockerfile
                 volumes:
-                        - ${PWD}/${VIDEO_FILE}:/video.mp4
+                        - ${PWD}/${VIDEO_FILE}:/video
                 links:
                         - rtsp-simple-server:server
 
