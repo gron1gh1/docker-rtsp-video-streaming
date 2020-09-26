@@ -1,9 +1,9 @@
-# docker-video-rtsp-streaming
+# docker-rtsp-video-streaming
 using [aler9/rtsp-simple-server](https://github.com/aler9/rtsp-simple-server)  
 RTSP Streaming the video file using simple-rtsp-server and ffmpeg.  
 
 ## Preview
-![Alt Text](https://github.com/gron1gh1/docker-video-rtsp-streaming/blob/master/preview.gif)
+![Alt Text](https://github.com/gron1gh1/docker-rtsp-video-streaming/blob/master/preview.gif)
 
 ## Usage
 Please modify **.env**  file.
